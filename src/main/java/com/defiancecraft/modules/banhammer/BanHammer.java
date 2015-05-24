@@ -1,16 +1,15 @@
 package com.defiancecraft.modules.banhammer;
 
 import org.bukkit.plugin.PluginManager;
-import org.bukkit.plugin.java.JavaPlugin;
 
 import com.defiancecraft.core.command.CommandRegistry;
 import com.defiancecraft.core.database.collections.Collection;
-import com.defiancecraft.core.modules.Module;
+import com.defiancecraft.core.modules.impl.JavaModule;
 import com.defiancecraft.modules.banhammer.commands.ModerationCommands;
 import com.defiancecraft.modules.banhammer.listeners.PlayerLoginListener;
 import com.defiancecraft.modules.banhammer.util.BanHammerConfig;
 
-public class BanHammer extends JavaPlugin implements Module {
+public class BanHammer extends JavaModule {
 
 	private static BanHammerConfig config;
 	private static BanHammer instance;
